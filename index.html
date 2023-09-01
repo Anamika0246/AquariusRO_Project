@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquarius RO Water Supplier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="AquariusROlogo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="cross" class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Experience hydration at its purest!</h1><br><br>
+            <p>"Welcome to Aquarius RO Water Suppliers, a refreshing oasis brought to you by Rai Enterprises. Satisfy your thirst with our premium purified water, ensuring purity and hydration in every drop."</p>
+            <a class="hero-btn" href="">Get it for Yourself</a>
+        </div>
+
+    </section>
+    <!-- Services -->
+    <section class="services">
+        <h1>Services We Offer</h1><br>
+        <p>Choose any of the following categories as per your need!</p>
+
+        <div class="row">
+            <div class="services-col">
+                <h3>Everyday Pure</h3>
+                <p>"Get RO water cans on daily basis at minimal rates."</p>
+                <div class="house">
+                    <img src="homeicon.jpg">
+                </div>
+            </div>
+            <div class="services-col">
+                <h3>Workplace Hydro</h3>
+                <p>"Get RO water cans at your office with zero transportation charges."</p>
+                <div class="office">
+                    <img src="officeicon.jpg">
+                </div>
+            </div>
+            <div class="services-col">
+                <h3>Party Aqua</h3>
+                <p>"Get RO water cans for parties at the venue with minimal transportation prices."</p>
+                <div class="party">
+                    <img src="partyicon.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+<!-- javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        
+        function showMenu(){
+            navLinks.style.right ="0";
+        }  
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }  
+    </script>
+</body>
+</html>
